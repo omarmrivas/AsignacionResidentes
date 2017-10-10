@@ -1,0 +1,4 @@
+﻿Jorge Martín Méndez Leal, 1227,<(100740,ITEM),(110005,ITI),(100403,ITI),(110546,ITI)>,<(110448,ITI),(120848,ITI)>
+Víctor Gabriel Martínez Mendoza, 842,<(110448,ITI),(110017,ITI),(130675,ITI)>,<(110005,ITI),(100403,ITI),(110546,ITI)>
+Paulina del Rosario Perez Castillo, 679,<>,<(110017,ITI)>
+Manuel Chávez Pérez, 940,<(130576,ITI)>,<>
