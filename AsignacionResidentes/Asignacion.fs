@@ -21,11 +21,13 @@ let hacer_asignacion parcial user (carrera, periodo) =
     let alumnos_asesorados = 
             alumnos |> 
                 List.filter (fun (matricula, plan) -> 
-                    not (Array.exists (fun (_, _, xs, _) -> List.exists (fun (mat,_) -> mat = matricula) xs) asignaciones))
+                    not (Array.exists (fun (_, _, xs, _) -> List.exists (fun (mat,_) -> mat = matricula) xs) asignaciones) &&
+                    not (Array.exists (fun (_, _, xs, _) -> List.exists (fun (mat,_) -> mat = matricula) xs) resto))
     let alumnos_revisados = 
             alumnos |> 
                 List.filter (fun (matricula, plan) -> 
-                    not (Array.exists (fun (_, _, _, xs) -> List.exists (fun (mat,_) -> mat = matricula) xs) asignaciones))
+                    not (Array.exists (fun (_, _, _, xs) -> List.exists (fun (mat,_) -> mat = matricula) xs) asignaciones) &&
+                    not (Array.exists (fun (_, _, _, xs) -> List.exists (fun (mat,_) -> mat = matricula) xs) resto))
     let estado = Map.ofArray (Array.map (fun (nombre, id, a, r) -> (id, (a, r))) asignaciones)
     let pendiente_asesorados matricula estado =
         estado |> Map.filter (fun id (asesorados, revisiones) -> 
@@ -254,7 +256,7 @@ let nivelar_asesorias user (carrera, periodo) =
                                                     List.forall (fun (mat',_) -> mat <> mat') xs1
                                                     ) ys
                                     ) inter_s3s1)
-    let sol2_asesor saignaciones par =
+    let sol2_asesor asignaciones par =
         let (((n1, id1, xs1, ys1),(n2, id2, xs2, ys2)) as par) = ordenar_asesor par
         printfn "Caso 2 (asesor): %A" par
         let s1 = set (List.map snd xs1)
@@ -403,6 +405,8 @@ let nivelar_asesorias user (carrera, periodo) =
          (n, i, xs, alumno2 :: List.filter (fun e -> e <> alumno1) ys))
             |> Library.tap (printfn "Sol 2 revisor: %A")
     let rec nivelar_asesores asignaciones =
+        printfn "nivelar_asesores - 1160: %A" (Map.find 1160 asignaciones)
+        printfn "nivelar_asesores - 758: %A" (Map.find 758 asignaciones)
         let par = asignaciones
                         |> Map.toArray
                         |> Array.map snd
@@ -424,6 +428,8 @@ let nivelar_asesorias user (carrera, periodo) =
                         else asignaciones
           | None -> asignaciones
     let rec nivelar_revisores asignaciones =
+        printfn "nivelar_revisores - 1160: %A" (Map.find 1160 asignaciones)
+        printfn "nivelar_asesores - 758: %A" (Map.find 758 asignaciones)
         let par = asignaciones
                         |> Map.toArray
                         |> Array.map snd

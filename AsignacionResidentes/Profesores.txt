@@ -5,12 +5,12 @@ Guadalupe Ledesma Ramos, 915, 2, 2
 Araceli Gabriela Aguilar Rodríguez, 625, 3, 3
 Guillermo García Haro, 954, 0, 3
 María de Guadalupe Islas González, 1076, 2, 2
-Rafael Llamas Contreras, 567, 5, 5
-Víctor Manuel Fernández Mireles, 673, 5, 5
-Liliana Gámez Zavala, 758, 5, 5
-Francisco Cruz Ordaz Salazar, 532, 5, 5
-Juan Antonio Cabrera Rico, 628, 5, 5
-Modar Shbat, 1262, 5, 5
+Rafael Llamas Contreras, 567, 10, 10
+Víctor Manuel Fernández Mireles, 673, 10, 10
+Liliana Gámez Zavala, 758, 10, 10
+Francisco Cruz Ordaz Salazar, 532, 10, 10
+Juan Antonio Cabrera Rico, 628, 10, 10
+Modar Shbat, 1262, 10, 10
 Marco Antonio Meinardo Leyva Medina, 1115, 6, 0
 Irwin Allen Díaz Díaz, 944, 2, 2
 Dinorah Cabrera Salinas, 448, 2, 2
@@ -21,7 +21,7 @@ José Eloy Torres Monreal (ITI's), 1106, 2, 1
 Ana Isabel Grimaldo Martínez, 1274, 2, 2
 Jorge Martín Méndez Leal, 1227, 3, 3
 Baltazar Martínez Galla, 1029, 4, 4
-Omar Montaño Rivas, 602, 5, 5
+Omar Montaño Rivas, 602, 10, 10
 Alonso Ruiz Ma. de Jesús, 1160, 4, 0
 Jesús Gustavo Flores Eraña, 1179, 3, 3
 Paulina del Rosario Perez Castillo, 679, 2, 2
